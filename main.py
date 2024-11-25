@@ -5,7 +5,7 @@ from Components.LanguageTasks import GetHighlight
 from Components.FaceCrop import crop_to_vertical, combine_videos
 
 url = input("Enter YouTube video URL: ")
-Vid= download_youtube_video(url)
+Vid = download_youtube_video(url)
 if Vid:
     Vid = Vid.replace(".webm", ".mp4")
     print(f"Downloaded video and audio files successfully! at {Vid}")
